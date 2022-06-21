@@ -3222,19 +3222,22 @@ pre.wp-block-verse {
 
   display:flex;
   flex-direction: column;
-padding:50px 20%;
+padding:0px 20%;
 }
 
 .story-title{
   text-align: center;
+  margin:0!important;
+  
 }
 
 .story-container{
-  padding:0 !important;
+  padding:100px 0% !important;
   margin:0!important;
-
+padding-bottom:50px;
 }
 
 #our-story-desc{
   text-align: justify!important;
+  margin-top:50px;
 }
