@@ -328,7 +328,7 @@
 }
 .wp-block-cover-image.has-background-dim:not([class*="-background-color"]),
 .wp-block-cover.has-background-dim:not([class*="-background-color"]) {
-  background-color: #000;
+  background-color: #013853;
 }
 .wp-block-cover-image.has-background-dim:before,
 .wp-block-cover.has-background-dim:before {
@@ -1774,7 +1774,7 @@ ul.has-background {
   .wp-block-navigation__container
   .wp-block-navigation-link__container {
   background-color: #fff;
-  color: #000;
+  color: #013853;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .wp-block-navigation__container {
@@ -1884,7 +1884,7 @@ ul.has-background {
 .wp-block-navigation:not(.has-background)
   .wp-block-navigation__responsive-container.is-menu-open {
   background-color: #fff;
-  color: #000;
+  color: #013853;
 }
 .wp-block-navigation__responsive-container-close,
 .wp-block-navigation__responsive-container-open {
@@ -2002,7 +2002,7 @@ html.has-modal-open {
   .wp-block-navigation__container
   .wp-block-home-link__container {
   background-color: #fff;
-  color: #000;
+  color: #013853;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .wp-block-navigation:not(.has-background)
@@ -2582,7 +2582,7 @@ p.has-text-color a {
   color: #fff;
 }
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-fivehundredpx {
-  background-color: #000;
+  background-color: #013853;
   color: #fff;
 }
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-flickr {
@@ -2652,7 +2652,7 @@ p.has-text-color a {
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-snapchat {
   background-color: #fefc00;
   color: #fff;
-  stroke: #000;
+  stroke: #013853;
 }
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-soundcloud {
   background-color: #ff5600;
@@ -2667,7 +2667,7 @@ p.has-text-color a {
   color: #fff;
 }
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-tiktok {
-  background-color: #000;
+  background-color: #013853;
   color: #fff;
 }
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-tumblr {
@@ -2734,7 +2734,7 @@ p.has-text-color a {
   color: #1778f2;
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-fivehundredpx {
-  color: #000;
+  color: #013853;
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-flickr {
   color: #0461dd;
@@ -2786,7 +2786,7 @@ p.has-text-color a {
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-snapchat {
   color: #fff;
-  stroke: #000;
+  stroke: #013853;
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-soundcloud {
   color: #ff5600;
@@ -2798,7 +2798,7 @@ p.has-text-color a {
   color: #2aabee;
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-tiktok {
-  color: #000;
+  color: #013853;
 }
 .wp-block-social-links.is-style-logos-only .wp-social-link-tumblr {
   color: #011835;
@@ -3036,7 +3036,7 @@ pre.wp-block-verse {
   background-color: #313131;
 }
 :root .has-black-background-color {
-  background-color: #000;
+  background-color: #013853;
 }
 :root .has-pale-pink-color {
   color: #f78da7;
@@ -3078,7 +3078,7 @@ pre.wp-block-verse {
   color: #313131;
 }
 :root .has-black-color {
-  color: #000;
+  color: #013853;
 }
 :root .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
   background: linear-gradient(135deg, #0693e3, #9b51e0);
