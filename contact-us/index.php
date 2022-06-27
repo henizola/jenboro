@@ -1615,10 +1615,7 @@ if(!empty($_POST["send"])) {
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTQ2BTD" height="0" width="0"
       style="display: none; visibility: hidden" aria-hidden="true"></iframe></noscript>
 
-  <script type="text/javascript">
-    var sbiajaxurl =
-      "https://hendon.qodeinteractive.com/wp-admin/admin-ajax.php";
-  </script>
+ 
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:400%7CRaleway:500%7CCormorant+Garamond:400&amp;display=swap"
     rel="stylesheet" property="stylesheet" media="all" type="text/css" />
@@ -1656,18 +1653,8 @@ if(!empty($_POST["send"])) {
     id="regenerator-runtime-js"></script>
   <script type="text/javascript" src="../wp-includes/js/dist/vendor/wp-polyfill.min%EF%B9%96ver=3.15.0.js"
     id="wp-polyfill-js"></script>
-  <script type="text/javascript" id="contact-form-7-js-extra">
-    /* <![CDATA[ */
-    var wpcf7 = {
-      api: {
-        root: "https:\/\/hendon.qodeinteractive.com\/wp-json\/",
-        namespace: "contact-form-7\/v1",
-      },
-    };
-      /* ]]> */
-  </script>
-  <script type="text/javascript" src="../wp-content/plugins/contact-form-7/includes/js/index%EF%B9%96ver=5.5.3.js"
-    id="contact-form-7-js"></script>
+ 
+ 
   <script type="text/javascript"
     src="../wp-content/plugins/image-map-pro-wordpress/js/image-map-pro.min%EF%B9%96ver=5.3.2.js"
     id="image-map-pro-dist-js-js"></script>
@@ -1803,24 +1790,7 @@ if(!empty($_POST["send"])) {
   <script type="text/javascript"
     src="https://static.zdassets.com/ekr/snippet.js?key=af3078fd-a5ae-40da-bee0-e589b98c8603&amp;ver=5.8.4"
     id="ze-snippet"></script>
-  <script type="text/javascript">
-    zE(function () {
-      $zopim(function () {
-        var isChatEnabled = sessionStorage.getItem("qodeChatEnabled"),
-          appearingTime = 15000;
 
-        if (isChatEnabled !== "no" && window.innerWidth > 1024) {
-          setTimeout(function () {
-            $zopim.livechat.window.show();
-
-            $zopim.livechat.window.onHide(function () {
-              sessionStorage.setItem("qodeChatEnabled", "no");
-            });
-          }, appearingTime);
-        }
-      });
-    });
-  </script>
   <script type="text/javascript" src="../wp-includes/js/wp-embed.min%EF%B9%96ver=5.8.4.js" id="wp-embed-js"></script>
   <script type="text/javascript"
     src="../wp-content/plugins/elementor/assets/js/webpack.runtime.min%EF%B9%96ver=3.5.2.js"
