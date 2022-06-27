@@ -1023,7 +1023,7 @@ if(!empty($_POST["send"])) {
                                           <p role="status" aria-live="polite" aria-atomic="true"></p>
                                           <ul></ul>
                                         </div>
-                                        <form name="contactFormEmail" method="post"class="wpcf7-form init"
+                                     <form name="contactFormEmail" method="post"class="wpcf7-form init"
                                           novalidate="novalidate" data-status="init">
                                           <div style="display: none">
                                             <input type="hidden" name="_wpcf7" value="260" />
@@ -1052,13 +1052,13 @@ if(!empty($_POST["send"])) {
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-date">
-                                                <input type="text" name="userPhone" required id="userPhone">
+                                                <input type="text" name="userPhone" required id="userPhone" placeholder='subject'>
                                                   </span>
                                               </div>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
                                               <span class="wpcf7-form-control-wrap your-message">
-                                              <textarea name="userMessage" id="userMessage" ></textarea>
+                                              <!-- <textarea name="userMessage" id="userMessage" ></textarea> -->
                                               </span>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">

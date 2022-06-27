@@ -20,7 +20,7 @@ if(!empty($_POST["send"])) {
   
 	$mailHeaders = "Name: " . $userName .
 	"\r\n Email: ". $userEmail  . 
-	"\r\n Phone: ". $userPhone  . 
+	"\r\n subject: ". $userPhone  . 
 	"\r\n Message: " . $userMessage . "\r\n";
 
 	if(mail($toEmail, $userName, $mailHeaders)) {
