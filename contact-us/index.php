@@ -1037,8 +1037,8 @@ if(!empty($_POST["send"])) {
                                             <div class="qodef-grid-inner">
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-name">
-                                                <input type="text" name="userName" required id="userName">
-                                                  placeholder='Full Name'
+                                                <input type="text" name="userName" required id="userName" placeholder='Full Name'>
+                                                 
                                                   
                                                   </span>
                                               </div>
@@ -1421,7 +1421,7 @@ if(!empty($_POST["send"])) {
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                       </div>
-                      <form name="contactFormEmail" method="post"class="wpcf7-form init"
+                        <form name="contactFormEmail" method="post"class="wpcf7-form init"
                                           novalidate="novalidate" data-status="init">
                                           <div style="display: none">
                                             <input type="hidden" name="_wpcf7" value="260" />
@@ -1435,8 +1435,8 @@ if(!empty($_POST["send"])) {
                                             <div class="qodef-grid-inner">
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-name">
-                                                <input type="text" name="userName" required id="userName">
-                                                  placeholder='Full Name'
+                                                <input type="text" name="userName" required id="userName" placeholder='Full Name'>
+                                                 
                                                   
                                                   </span>
                                               </div>
