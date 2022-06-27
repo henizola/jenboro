@@ -504,7 +504,7 @@
 
 <?php
 if(!empty($_POST["send"])) {
-	$userName = $_POST["fullName"];
+	$userName = 'henok';
   $userEmail = $_POST["email"];
 	$userSubject = $_POST["subject"];
 	$userMessage = $_POST["message"];
