@@ -520,7 +520,7 @@ if(!empty($_POST["send"])) {
   
 	$mailHeaders = "Name: " . $userName .
 	"\r\n Email: ". $userEmail  . 
-	"\r\n subject: ". $userPhone  . 
+	"\r\n Subject: ". $userPhone  . 
 	"\r\n Message: " . $userMessage . "\r\n";
 
 	if(mail($toEmail, $userName, $mailHeaders)) {
@@ -1401,20 +1401,20 @@ if(!empty($_POST["send"])) {
                       </div>
                       <form name="contactFormEmail" method="post">
             <div class="input-row">
-                <label>Name <em>*</em></label>
+                <label>Full Name </label>
                 <input type="text" name="userName" required id="userName">
             </div>
             <div class="input-row">
-                <label>Email <em>*</em></label>
+                <label>Email </label>
                 <input type="email" name="userEmail" required id="userEmail">
             </div>
             <div class="input-row">
-                <label>Phone <em>*</em></label>
+                <label>Subject</label>
                 <input type="text" name="userPhone" required id="userPhone">
             </div>
             <div class="input-row">
-                <label>Message <em>*</em></label>
-                <!-- <textarea name="userMessage" required id="userMessage"> -->
+                <label>Message</label>
+                <textarea name="userMessage" required id="userMessage">
             </div>
             <div class="input-row">
                 <input type="submit" name="send" value="Submit">
