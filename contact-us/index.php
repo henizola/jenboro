@@ -504,8 +504,8 @@
 
 <?php
 if(!empty($_POST["send"])) {
-	$userName = 'henok';
-  $userEmail = $_POST["email"];
+	$userName = $_POST["fullName"];
+  $userEmail = 'email here';
 	$userSubject = $_POST["subject"];
 	$userMessage = $_POST["message"];
 	$toEmail = "z.w.henok@gmail.com";
