@@ -501,7 +501,24 @@
     }
   </style>
 </head>
+<?php
+if(!empty($_POST["send"])) {
+	$userName = $_POST["userName"];
+  $userEmail = $_POST["userEmail"];
+	$userPhone = $_POST["userPhone"];
+	$userMessage = $_POST["userMessage"];
+	$toEmail = "henizola@gmail.com";
+  
+	$mailHeaders = "Name: " . $userName .
+	"\r\n Email: ". $userEmail  . 
+	"\r\n Phone: ". $userPhone  . 
+	"\r\n Message: " . $userMessage . "\r\n";
 
+	if(mail($toEmail, $userName, $mailHeaders)) {
+	    $message = "Your contact information is received successfully.";
+	}
+}
+?>
 <body
   class="page-template page-template-page-full-width page-template-page-full-width-php page page-id-1239 theme-hendon qode-framework-1.1.6 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.5.1 qodef-age-verification--opened qodef-back-to-top--enabled qodef-content-grid-1300 qodef-header--light qodef-header--divided qodef-header-appearance--none qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--animate-height hendon-core-1.1.1 hendon-1.3 qodef-search--covers-header elementor-default elementor-kit-10 elementor-page elementor-page-1239"
   itemscope itemtype="https://schema.org/WebPage">
@@ -1003,8 +1020,12 @@
                                           <p role="status" aria-live="polite" aria-atomic="true"></p>
                                           <ul></ul>
                                         </div>
-                                        <form action="#wpcf7-f260-p1239-o1" method="post" class="wpcf7-form init"
-                                          novalidate="novalidate" data-status="init">
+                                        <form 
+                              class="wpcf7-form init"
+                                          novalidate="novalidate" data-status="init"
+                                          
+                                       name="contactFormEmail" method="post"
+                                          >
                                           <div style="display: none">
                                             <input type="hidden" name="_wpcf7" value="260" />
                                             <input type="hidden" name="_wpcf7_version" value="5.5.3" />
@@ -1050,7 +1071,13 @@
                                               </button>
                                             </div>
                                           </div>
-                                          <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                          <?php if (! empty($message)) {?>
+                <div class='success'>
+                    <strong>
+                        <?php echo $message; ?>
+                    </strong>
+                </div>
+                <?php } ?>
                                         </form>
                                       </div>
                                     </div>
@@ -1268,6 +1295,13 @@
                           </div>
                         </div>
                       </div>
+                    </section>
+                    <section
+                      class="elementor-section elementor-top-section elementor-element elementor-element-7524bf8 elementor-section-full_width qodef-elementor-content-grid elementor-section-height-default elementor-section-height-default"
+                      data-id="7524bf8" data-element_type="section" style="padding:0;"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.114415948855!2d38.78428231482867!3d8.96160379250837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85fd224c364d%3A0x71620e039fd5c304!2zSmVuYmVybyBSZWFsIEVzdGF0ZSDhjIDhipXhiaDhiK4g4Yiq4YiNIOGIteGJtOGJtQ!5e0!3m2!1sen!2set!4v1656330618145!5m2!1sen!2set"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </section>
                   </div>
                 </div>
