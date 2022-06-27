@@ -507,11 +507,13 @@ if(!empty($_POST["send"])) {
 	$userName = $_POST["userName"];
   $userEmail = $_POST["userEmail"];
 	$userPhone = $_POST["userPhone"];
+	$userMessage = $_POST["userMessage"];
 	$toEmail = "z.w.henok@gmail.com";
   
 	$mailHeaders = "Name: " . $userName .
 	"\r\n Email: ". $userEmail  . 
-	"\r\n subject: ". $userPhone  . "\r\n";
+	"\r\n subject: ". $userPhone  . 
+	"\r\n Message: " . $userMessage . "\r\n";
 
 	if(mail($toEmail, $userName, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
@@ -1021,60 +1023,34 @@ if(!empty($_POST["send"])) {
                                           <p role="status" aria-live="polite" aria-atomic="true"></p>
                                           <ul></ul>
                                         </div>
-                                     <form name="contactFormEmail" method="post"class="wpcf7-form init"
-                                          novalidate="novalidate" data-status="init">
-                                          <div style="display: none">
-                                            <input type="hidden" name="_wpcf7" value="260" />
-                                            <input type="hidden" name="_wpcf7_version" value="5.5.3" />
-                                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f260-p1239-o1" />
-                                            <input type="hidden" name="_wpcf7_container_post" value="1239" />
-                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                          </div>
-                                          <div class="qodef-main-cf7 qodef-grid qodef-layout--template">
-                                            <div class="qodef-grid-inner">
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-name">
-                                                <input type="text" name="userName" required id="userName" placeholder='Full Name'>
-                                                 
-                                                  
-                                                  </span>
-                                              </div>
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-email">
-                                                  
-                                                <input type="email" name="userEmail" required id="userEmail" placeholder='E-mail'>
-                                                  
-                                                  
-                                                  </span>
-                                              </div>
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-date">
-                                                <input type="text" name="userPhone" required id="userPhone" placeholder='subject'>
-                                                  </span>
-                                              </div>
-                                            </div>
-                                            <div class="qodef-grid-item qodef-col--12">
-                                              <span class="wpcf7-form-control-wrap your-message">
-                                              <!-- <textarea name="userMessage" id="userMessage" ></textarea> -->
-                                              </span>
-                                            </div>
-                                            <div class="qodef-grid-item qodef-col--12">
-                                            <input type="submit" name="send" value="Submit">
-                                            </div>
-                                          </div>
-                                          <div class="wpcf7-response-output" aria-hidden="true">
-
-
-                                          <?php if (! empty($message)) {?>
-    
-     
+                                        <form name="contactFormEmail" method="post">
+            <div class="input-row">
+                <label>Name <em>*</em></label>
+                <input type="text" name="userName" required id="userName">
+            </div>
+            <div class="input-row">
+                <label>Email <em>*</em></label>
+                <input type="email" name="userEmail" required id="userEmail">
+            </div>
+            <div class="input-row">
+                <label>Phone <em>*</em></label>
+                <input type="text" name="userPhone" required id="userPhone">
+            </div>
+            <div class="input-row">
+                <label>Message <em>*</em></label>
+                <!-- <textarea name="userMessage" required id="userMessage"> -->
+            </div>
+            <div class="input-row">
+                <input type="submit" name="send" value="Submit">
+                <?php if (! empty($message)) {?>
+                <div class='success'>
+                    <strong>
                         <?php echo $message; ?>
-          
-      
+                    </strong>
+                </div>
                 <?php } ?>
-                                          </div>
-                                        </form>
+            </div>
+        </form>
                                       </div>
                                     </div>
                                   </div>
@@ -1419,60 +1395,34 @@ if(!empty($_POST["send"])) {
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                       </div>
-                        <form name="contactFormEmail" method="post"class="wpcf7-form init"
-                                          novalidate="novalidate" data-status="init">
-                                          <div style="display: none">
-                                            <input type="hidden" name="_wpcf7" value="260" />
-                                            <input type="hidden" name="_wpcf7_version" value="5.5.3" />
-                                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f260-p1239-o1" />
-                                            <input type="hidden" name="_wpcf7_container_post" value="1239" />
-                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                          </div>
-                                          <div class="qodef-main-cf7 qodef-grid qodef-layout--template">
-                                            <div class="qodef-grid-inner">
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-name">
-                                                <input type="text" name="userName" required id="userName" placeholder='Full Name'>
-                                                 
-                                                  
-                                                  </span>
-                                              </div>
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-email">
-                                                  
-                                                <input type="email" name="userEmail" required id="userEmail" placeholder='E-mail'>
-                                                  
-                                                  
-                                                  </span>
-                                              </div>
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-date">
-                                                <input type="text" name="userPhone" required id="userPhone">
-                                                  </span>
-                                              </div>
-                                            </div>
-                                            <div class="qodef-grid-item qodef-col--12">
-                                              <span class="wpcf7-form-control-wrap your-message">
-                                              <textarea name="userMessage" id="userMessage" ></textarea>
-                                              </span>
-                                            </div>
-                                            <div class="qodef-grid-item qodef-col--12">
-                                            <input type="submit" name="send" value="Submit">
-                                            </div>
-                                          </div>
-                                          <div class="wpcf7-response-output" aria-hidden="true">
-
-
-                                          <?php if (! empty($message)) {?>
-    
-     
+                      <form name="contactFormEmail" method="post">
+            <div class="input-row">
+                <label>Name <em>*</em></label>
+                <input type="text" name="userName" required id="userName">
+            </div>
+            <div class="input-row">
+                <label>Email <em>*</em></label>
+                <input type="email" name="userEmail" required id="userEmail">
+            </div>
+            <div class="input-row">
+                <label>Phone <em>*</em></label>
+                <input type="text" name="userPhone" required id="userPhone">
+            </div>
+            <div class="input-row">
+                <label>Message <em>*</em></label>
+                <!-- <textarea name="userMessage" required id="userMessage"> -->
+            </div>
+            <div class="input-row">
+                <input type="submit" name="send" value="Submit">
+                <?php if (! empty($message)) {?>
+                <div class='success'>
+                    <strong>
                         <?php echo $message; ?>
-          
-      
+                    </strong>
+                </div>
                 <?php } ?>
-                                          </div>
-                                        </form>
+            </div>
+        </form>
                     </div>
                   </div>
                 </div>
