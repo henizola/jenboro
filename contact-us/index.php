@@ -1058,7 +1058,7 @@ if(!empty($_POST["send"])) {
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
                                               <span class="wpcf7-form-control-wrap your-message">
-                                              <textarea name="userMessage" required id="userMessage" placeholder='Message'>
+                                              <textarea name="userMessage" required id="userMessage" placeholder='Message'></textarea>
                                               </span>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
