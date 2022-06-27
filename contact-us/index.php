@@ -1038,27 +1038,27 @@ if(!empty($_POST["send"])) {
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-name">
                                                 <input type="text" name="userName" required id="userName">
-                                                  
+                                                  placeholder='Full Name'
                                                   
                                                   </span>
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-email">
                                                   
-                                                <input type="email" name="userEmail" required id="userEmail" placeholder='Email'>
+                                                <input type="email" name="userEmail" required id="userEmail" placeholder='E-mail'>
                                                   
                                                   
                                                   </span>
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-date">
-                                                <input type="text" name="userPhone" required id="userPhone" placeholder='Email'>
+                                                <input type="text" name="userPhone" required id="userPhone">
                                                   </span>
                                               </div>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
                                               <span class="wpcf7-form-control-wrap your-message">
-                                              <textarea name="userMessage" required id="userMessage" placeholder='Message'></textarea>
+                                              <textarea name="userMessage" id="userMessage" ></textarea>
                                               </span>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
