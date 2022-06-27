@@ -1043,24 +1043,22 @@ if(!empty($_POST["send"])) {
                                                   </span>
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                    name="email" size="40"
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                    
-                                                    placeholder="E-mail" /></span>
+                                                <span class="wpcf7-form-control-wrap your-email">
+                                                  
+                                                <input type="email" name="userEmail" required id="userEmail" placeholder='Email'>
+                                                  
+                                                  
+                                                  </span>
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-date"><input type="text"
-                                                    name="subject" placeholder="Subject" 
-                                                    class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date"
-                                                   /></span>
+                                                <span class="wpcf7-form-control-wrap your-date">
+                                                <input type="text" name="userPhone" required id="userPhone" placeholder='Email'>
+                                                  </span>
                                               </div>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
                                               <span class="wpcf7-form-control-wrap your-message">
-                                                <textarea name="message" cols="40" rows="10"
-                                                  class="wpcf7-form-control wpcf7-textarea"
-                                                  placeholder="Message"></textarea>
+                                              <textarea name="userMessage" required id="userMessage" placeholder='Message'>
                                               </span>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
@@ -1436,16 +1434,14 @@ if(!empty($_POST["send"])) {
                         <div class="qodef-newsletter-cf7">
                           <div>
                             <span class="wpcf7-form-control-wrap your-name">
-                            <input type="text" name="userName" required id="userName">
+                            <input type="text" name="userName" required id="userName" placeholder='Full Name'>
                               
                               </span>
                           </div>
                           <div>
                             <span class="wpcf7-form-control-wrap your-email">
-                              <input type="email" name="email"
-                                size="40"
-                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                          placeholder="E-mail" /></span>
+                            <input type="text" name="userEmail" required id="userEmail" placeholder='Email'>
+                          </span>
                           </div>
                           <div>
                           <input type="submit" name="send" value="Submit">
