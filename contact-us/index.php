@@ -503,15 +503,15 @@
 </head>
 <?php
 if(!empty($_POST["send"])) {
-	$userName = $_POST["userName"];
+	$userName = $_POST["fullName"];
   $userEmail = $_POST["userEmail"];
-	$userPhone = $_POST["userPhone"];
+	$userPhone = $_POST["subject"];
 	$userMessage = $_POST["userMessage"];
 	$toEmail = "henizola@gmail.com";
   
-	$mailHeaders = "Name: " . $userName .
+	$mailHeaders = "Name: " . $fullName .
 	"\r\n Email: ". $userEmail  . 
-	"\r\n Phone: ". $userPhone  . 
+	"\r\n Phone: ". $subject  . 
 	"\r\n Message: " . $userMessage . "\r\n";
 
 	if(mail($toEmail, $userName, $mailHeaders)) {
@@ -1038,14 +1038,14 @@ if(!empty($_POST["send"])) {
                                             <div class="qodef-grid-inner">
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-name"><input type="text"
-                                                    name="your-name" value="" size="40"
+                                                    name="fullName" value="" size="40"
                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                     aria-required="true" aria-invalid="false"
                                                     placeholder="Full name" /></span>
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                    name="your-email" value="" size="40"
+                                                    name="userEmail" value="" size="40"
                                                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                                     aria-required="true" aria-invalid="false"
                                                     placeholder="E-mail" /></span>
@@ -1059,7 +1059,8 @@ if(!empty($_POST["send"])) {
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
                                               <span class="wpcf7-form-control-wrap your-message">
-                                                <textarea name="your-message" cols="40" rows="10"
+                                                <textarea name="userMessage" cols="40"
+                                                 rows="10"
                                                   class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
                                                   placeholder="Message"></textarea>
                                               </span>
