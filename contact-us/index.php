@@ -1038,6 +1038,7 @@ if(!empty($_POST["send"])) {
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-name"><input type="text"
                                                     name="fullName" size="40"
+                                                    id='fullName'
                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                               
                                                     placeholder="Full name" /></span>
@@ -1436,11 +1437,13 @@ if(!empty($_POST["send"])) {
                         <div class="qodef-newsletter-cf7">
                           <div>
                             <span class="wpcf7-form-control-wrap your-name"><input type="text" name="fullName" 
+                            id='fullName'
                                 size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                placeholder="Name" /></span>
                           </div>
                           <div>
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="email"
+                            <span class="wpcf7-form-control-wrap your-email">
+                              <input type="email" name="email"
                                 size="40"
                                 class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                           placeholder="E-mail" /></span>
