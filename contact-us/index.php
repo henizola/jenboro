@@ -511,8 +511,7 @@ if(!empty($_POST["send"])) {
   
 	$mailHeaders = "Name: " . $userName .
 	"\r\n Email: ". $userEmail  . 
-	"\r\n subject: ". $userPhone  . 
-
+	"\r\n subject: ". $userPhone  . "\r\n";
 
 	if(mail($toEmail, $userName, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
