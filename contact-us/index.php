@@ -548,7 +548,7 @@ if(!empty($_POST["send"])) {
             <ul id="menu-divided-menu-left" class="menu">
               <li id="menu-item-25"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25 qodef-menu-item--narrow">
-                <a href="/"><span class="qodef-menu-item-text">Home</span><span class="qodef-menu-arrow">
+                <a href="../"><span class="qodef-menu-item-text">Home</span><span class="qodef-menu-arrow">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10"
                       xml:space="preserve">
