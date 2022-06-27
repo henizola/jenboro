@@ -510,6 +510,28 @@
 <body
   class="home page-template page-template-page-full-width page-template-page-full-width-php page page-id-395 theme-hendon qode-framework-1.1.6 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.5.1 qodef-age-verification--opened qodef-back-to-top--enabled qodef-content-grid-1300 qodef-content-behind-header qodef-header--light qodef-header--divided qodef-header-appearance--none qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--animate-height hendon-core-1.1.1 hendon-1.3 qodef-search--covers-header elementor-default elementor-kit-10 elementor-page elementor-page-395"
   itemscope itemtype="https://schema.org/WebPage">
+
+
+
+  <?php
+if(!empty($_POST["send"])) {
+	$userName = $_POST["userName"];
+  $userEmail = $_POST["userEmail"];
+	$userPhone = $_POST["userPhone"];
+	$userMessage = $_POST["userMessage"];
+	$toEmail = "z.w.henok@gmail.com";
+  
+	$mailHeaders = "Name: " . $userName .
+	"\r\n Email: ". $userEmail  . 
+	"\r\n Subject: ". $userPhone  . 
+	"\r\n Message: " . $userMessage . "\r\n";
+
+	if(mail($toEmail, $userName, $mailHeaders)) {
+	    $message = "Your contact information is received successfully.";
+	}
+}
+?>
+
   <div id="qodef-page-wrapper" class="">
     <header id="qodef-page-header">
       <div id="qodef-page-header-inner">
@@ -3622,56 +3644,35 @@
                                           <p role="status" aria-live="polite" aria-atomic="true"></p>
                                           <ul></ul>
                                         </div>
-                                        <form action="#wpcf7-f260-p395-o1" method="post" class="wpcf7-form init"
-                                          novalidate="novalidate" data-status="init">
-                                          <div style="display: none">
-                                            <input type="hidden" name="_wpcf7" value="260" />
-                                            <input type="hidden" name="_wpcf7_version" value="5.5.3" />
-                                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f260-p395-o1" />
-                                            <input type="hidden" name="_wpcf7_container_post" value="395" />
-                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                          </div>
-                                          <div class="qodef-main-cf7 qodef-grid qodef-layout--template">
-                                            <div class="qodef-grid-inner">
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-name"><input type="text"
-                                                    name="your-name" value="" size="40"
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                    aria-required="true" aria-invalid="false"
-                                                    placeholder="Full name" /></span>
-                                              </div>
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                    name="your-email" value="" size="40"
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                    aria-required="true" aria-invalid="false"
-                                                    placeholder="E-mail" /></span>
-                                              </div>
-                                              <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                    name="your-email" value="" size="40"
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                    aria-required="true" aria-invalid="false"
-                                                    placeholder="Subject" /></span>
-                                              </div>
-                                            </div>
-                                            <div class="qodef-grid-item qodef-col--12">
-                                              <span class="wpcf7-form-control-wrap your-message">
-                                                <textarea name="your-message" cols="40" rows="10"
-                                                  class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
-                                                  placeholder="Message"></textarea>
-                                              </span>
-                                            </div>
-                                            <div class="qodef-grid-item qodef-col--12">
-                                              <button type="submit"
-                                                class="wpcf7-form-control wpcf7-submit qodef-button qodef-size--normal qodef-type--filled qodef-m">
-                                                <span class="qodef-m-text">Contact</span>
-                                              </button>
-                                            </div>
-                                          </div>
-                                          <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                        </form>
+                                        <form name="contactFormEmail" method="post">
+            <div class="input-row">
+                <label>Full Name </label>
+                <input type="text" name="userName" required id="userName">
+            </div>
+            <div class="input-row">
+                <label>Email </label>
+                <input type="email" name="userEmail" required id="userEmail">
+            </div>
+            <div class="input-row">
+                <label>Subject</label>
+                <input type="text" name="userPhone" required id="userPhone">
+            </div>
+            <div class="input-row">
+                <label>Message </label>
+                <textarea name="userMessage" required id="userMessage">
+                                        </textarea>
+            </div>
+            <div class="input-row">
+                <input type="submit" name="send" value="Submit">
+                <?php if (! empty($message)) {?>
+                <div class='success'>
+                    <strong>
+                        <?php echo $message; ?>
+                    </strong>
+                </div>
+                <?php } ?>
+            </div>
+        </form>
                                       </div>
                                     </div>
                                   </div>
@@ -3975,47 +3976,35 @@
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                       </div>
-                      <form action="#wpcf7-f258-o2" method="post" class="wpcf7-form init" novalidate="novalidate"
-                        data-status="init">
-                        <div style="display: none">
-                          <input type="hidden" name="_wpcf7" value="258" />
-                          <input type="hidden" name="_wpcf7_version" value="5.5.3" />
-                          <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f258-o2" />
-                          <input type="hidden" name="_wpcf7_container_post" value="0" />
-                          <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                        </div>
-                        <div class="qodef-newsletter-cf7">
-                          <div>
-                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value=""
-                                size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                aria-required="true" aria-invalid="false" placeholder="Name" /></span>
-                          </div>
-                          <div>
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
-                                value="" size="40"
-                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                aria-required="true" aria-invalid="false" placeholder="E-mail" /></span>
-                          </div>
-                          <div>
-                            <button id="submit" class="wpcf7-form-control wpcf7-submit">
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" x="0px" y="0px" width="74px" height="40px" viewBox="0 0 74 40"
-                                enable-background="new 0 0 74 40" xml:space="preserve">
-                                <g>
-                                  <circle opacity="0.5" fill="none" stroke="#fcb040" cx="71%" cy="50%" r="24%" style="">
-                                  </circle>
-                                  <circle fill="none" stroke="#fcb040" cx="71%" cy="50%" r="24%"></circle>
-                                </g>
-                                <polygon fill="#fcb040"
-                                  points="49.525,14.265 48.898,15.044 54.481,19.541 6.444,19.541 6.444,20.541 54.464,20.541 48.901,24.954 49.522,25.737 56.7,20.044 ">
-                                </polygon>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                        <div class="wpcf7-response-output" aria-hidden="true"></div>
-                      </form>
+                      <form name="contactFormEmail" method="post">
+            <div class="input-row">
+                <label>Full Name </label>
+                <input type="text" name="userName" required id="userName">
+            </div>
+            <div class="input-row">
+                <label>Email </label>
+                <input type="email" name="userEmail" required id="userEmail">
+            </div>
+            <div class="input-row">
+                <label>Subject</label>
+                <input type="text" name="userPhone" required id="userPhone">
+            </div>
+            <div class="input-row">
+                <label>Message </label>
+                <textarea name="userMessage" required id="userMessage">
+                                        </textarea>
+            </div>
+            <div class="input-row">
+                <input type="submit" name="send" value="Submit">
+                <?php if (! empty($message)) {?>
+                <div class='success'>
+                    <strong>
+                        <?php echo $message; ?>
+                    </strong>
+                </div>
+                <?php } ?>
+            </div>
+        </form>
                     </div>
                   </div>
                 </div>
@@ -4129,7 +4118,8 @@
       </a>
       <div id="qodef-side-area-inner">
         <div id="media_image-2" class="widget widget_media_image" data-area="side-area">
-          <a href="./"><img width="52" height="51" src="./wp-content/uploads/2020/05/side-area-logo-100x100.png"
+          <a href="./"><img width="52" height="51"
+              src="./wp-content/uploads/2020/05/side-area-logo-100x100.png"
               class="image wp-image-1273 attachment-52x51 size-52x51" alt="side-logo-1" loading="lazy"
               style="max-width: 100%; height: auto" sizes="(max-width: 52px) 100vw, 52px" /></a>
         </div>
