@@ -1066,19 +1066,22 @@ if(!empty($_POST["send"])) {
                                               </span>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
-                                              <button type="submit"
+                                              <button type="submit" name="send" value="Submit"
                                                 class="wpcf7-form-control wpcf7-submit qodef-button qodef-size--normal qodef-type--filled qodef-m">
                                                 <span class="qodef-m-text">Contact</span>
                                               </button>
+
+                                              <div class="input-row">
+   
+      <?php if (! empty($message)) {?>
+      <div class='success'>
+        <strong><?php echo $message; ?>	</strong>
+      </div>
+      <?php } ?>
+    </div>
                                             </div>
                                           </div>
-                                          <?php if (! empty($message)) {?>
-                <div class='success'>
-                    <strong>
-                        <?php echo $message; ?>
-                    </strong>
-                </div>
-                <?php } ?>
+                                          
                                         </form>
                                       </div>
                                     </div>
