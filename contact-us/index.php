@@ -1435,10 +1435,10 @@ if(!empty($_POST["send"])) {
                         </div>
                         <div class="qodef-newsletter-cf7">
                           <div>
-                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="fullName" 
-                            id='fullName'
-                                size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                               placeholder="Name" /></span>
+                            <span class="wpcf7-form-control-wrap your-name">
+                            <input type="text" name="userName" required id="userName">
+                              
+                              </span>
                           </div>
                           <div>
                             <span class="wpcf7-form-control-wrap your-email">
