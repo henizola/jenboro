@@ -1066,10 +1066,7 @@ if(!empty($_POST["send"])) {
                                               </span>
                                             </div>
                                             <div class="qodef-grid-item qodef-col--12">
-                                              <button type="submit" name="send" value="Submit"
-                                                class="wpcf7-form-control wpcf7-submit qodef-button qodef-size--normal qodef-type--filled qodef-m">
-                                                <span class="qodef-m-text">Contact</span>
-                                              </button>
+                                            <input type="submit" name="send" value="Submit">
 
                                               <div class="input-row">
    
@@ -1450,20 +1447,7 @@ if(!empty($_POST["send"])) {
                                 aria-required="true" aria-invalid="false" placeholder="E-mail" /></span>
                           </div>
                           <div>
-                            <button id="submit" class="wpcf7-form-control wpcf7-submit">
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" x="0px" y="0px" width="74px" height="40px" viewBox="0 0 74 40"
-                                enable-background="new 0 0 74 40" xml:space="preserve">
-                                <g>
-                                  <circle opacity="0.5" fill="none" stroke="#fcb040" cx="71%" cy="50%" r="24%" style="">
-                                  </circle>
-                                  <circle fill="none" stroke="#fcb040" cx="71%" cy="50%" r="24%"></circle>
-                                </g>
-                                <polygon fill="#fcb040"
-                                  points="49.525,14.265 48.898,15.044 54.481,19.541 6.444,19.541 6.444,20.541 54.464,20.541 48.901,24.954 49.522,25.737 56.7,20.044 ">
-                                </polygon>
-                              </svg>
-                            </button>
+                          <input type="submit" name="send" value="Submit">
                           </div>
                         </div>
                         <div class="wpcf7-response-output" aria-hidden="true"></div>
