@@ -1414,7 +1414,7 @@ if(!empty($_POST["send"])) {
             </div>
             <div class="input-row">
                 <label>Message</label>
-                <textarea name="userMessage" required id="userMessage">
+                <textarea name="userMessage" required id="userMessage"></textarea>
             </div>
             <div class="input-row">
                 <input type="submit" name="send" value="Submit">
