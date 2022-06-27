@@ -504,15 +504,15 @@
 
 <?php
 if(!empty($_POST["send"])) {
-	$userName = $_POST["fullName"];
-  $userEmail = 'email here';
-	$userSubject = $_POST["subject"];
-	$userMessage = $_POST["message"];
+	$userName = $_POST["userName"];
+  $userEmail = $_POST["userEmail"];
+	$userPhone = $_POST["userPhone"];
+	$userMessage = $_POST["userMessage"];
 	$toEmail = "z.w.henok@gmail.com";
   
 	$mailHeaders = "Name: " . $userName .
 	"\r\n Email: ". $userEmail  . 
-	"\r\nSubject: ". $userSubject  . 
+	"\r\n subject: ". $userPhone  . 
 	"\r\n Message: " . $userMessage . "\r\n";
 
 	if(mail($toEmail, $userName, $mailHeaders)) {
@@ -1036,12 +1036,11 @@ if(!empty($_POST["send"])) {
                                           <div class="qodef-main-cf7 qodef-grid qodef-layout--template">
                                             <div class="qodef-grid-inner">
                                               <div class="qodef-grid-item qodef-col--12">
-                                                <span class="wpcf7-form-control-wrap your-name"><input type="text"
-                                                    name="fullName" size="40"
-                                                    id='fullName'
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                              
-                                                    placeholder="Full name" /></span>
+                                                <span class="wpcf7-form-control-wrap your-name">
+                                                <input type="text" name="userName" required id="userName">
+                                                  
+                                                  
+                                                  </span>
                                               </div>
                                               <div class="qodef-grid-item qodef-col--12">
                                                 <span class="wpcf7-form-control-wrap your-email"><input type="email"
