@@ -1021,7 +1021,7 @@ if(!empty($_POST["send"])) {
                                         </div>
                                         <div class="qodef-m-title-holder">
                                           <h6 class="qodef-m-title">
-                                            Square Areas
+                                            Square Meter
                                           </h6>
                                         </div>
                                       </div>
@@ -1163,8 +1163,7 @@ if(!empty($_POST["send"])) {
                                         YOUR IDEAL HOME WITH 70% COMPLETE
                                       </h3>
                                       <p class="qodef-m-text" style="margin-top: 28px">
-                                        FROM POINT OF PURCHASE Spatially Sound
-                                        Design For Comfort Made Affordable
+                                      We provide homes of attractive design for comfort made affordable.
                                       </p>
                                     </div>
                                   </div>
@@ -1476,9 +1475,7 @@ if(!empty($_POST["send"])) {
                                         REQUEST A SITE VISIT
                                       </h2>
                                       <p class="qodef-m-text" style="color: #ffffff">
-                                        We believe in the transparent delivery
-                                        and with our 70% delivery promise, we
-                                        openly offer a site visit.
+                                      WE believe in timely delivery and aligning with our '70% completion’ promise, we openly offer a site visit.
                                       </p>
                                     </div>
                                   </div>
@@ -1585,7 +1582,7 @@ if(!empty($_POST["send"])) {
                                                   </div>
                                                   <div class="qodef-m-content">
                                                     <h5 class="qodef-m-title" style="color: #ffffff">
-                                                      <span class="qodef-m-title-text">GREEN PEACE</span>
+                                                      <span class="qodef-m-title-text">Green Oasis</span>
                                                     </h5>
                                                     <p class="qodef-m-text" style="color: #b2b2b2">
                                                       With balconies
@@ -1624,13 +1621,10 @@ if(!empty($_POST["send"])) {
                                                   </div>
                                                   <div class="qodef-m-content">
                                                     <h5 class="qodef-m-title" style="color: #ffffff">
-                                                      <span class="qodef-m-title-text">MADE FOR HUMAN</span>
+                                                      <span class="qodef-m-title-text">Build For Human</span>
                                                     </h5>
                                                     <p class="qodef-m-text" style="color: #b2b2b2">
-                                                      For our design, we look
-                                                      to provide spaces
-                                                      accurately crafted for
-                                                      you.
+                                                     disillusioned by uncomfortable offer from elsewhere .
                                                     </p>
                                                   </div>
                                                 </div>
@@ -1793,7 +1787,7 @@ if(!empty($_POST["send"])) {
                                         EXPLORE OUR OFFERS
                                       </h2>
                                       <p class="qodef-m-text">
-                                        AN OVERVIEW AT CAN BE YOUR FUTURE HOME
+                                        AN OVERVIEW OF WHAT CAN BE YOUR FUTURE HOME
                                       </p>
                                     </div>
                                   </div>
@@ -3173,11 +3167,12 @@ if(!empty($_POST["send"])) {
                                   <div class="elementor-widget-container">
                                     <div class="qodef-shortcode qodef-m qodef-section-title qodef-alignment--left">
                                       <h3 class="qodef-m-title" style="color: #ffffff">
-                                        REPLENISH YOUR MEMORY WITH UPDATED
-                                        NEWS FROM OUR BLOG ENJOY
+                                       REPLENISH YOUR MEMORY WITH UPDATED NEWS FROM OUR BLOG. ENJOY!
+
                                       </h3>
                                       <p class="qodef-m-text" style="margin-top: 28px">
-                                        At vero eos et accus amuset iusto odio
+                                        Highlighted news around the world
+
                                       </p>
                                     </div>
                                   </div>
@@ -3396,7 +3391,7 @@ if(!empty($_POST["send"])) {
                                                   Marlon Sutton
                                                 </h5>
                                                 <span class="qodef-e-author-job">
-                                                  Buyer 1
+                                                  buyer
                                                 </span>
                                               </div>
                                             </div>
@@ -3455,7 +3450,7 @@ if(!empty($_POST["send"])) {
                                                   Darrell Berges
                                                 </h5>
                                                 <span class="qodef-e-author-job">
-                                                  Buyer 2
+                                                  buyer
                                                 </span>
                                               </div>
                                             </div>
@@ -3517,7 +3512,7 @@ if(!empty($_POST["send"])) {
                                                   Government Official
                                                 </h5>
                                                 <span class="qodef-e-author-job">
-                                                  Buyer 2
+                                                  buyer
                                                 </span>
                                               </div>
                                             </div>
@@ -3843,8 +3838,8 @@ if(!empty($_POST["send"])) {
                                     <div class="elementor-text-editor elementor-clearfix">
                                       <h6 style="text-align: center">
                                         <span style="color: #fcb040"></span>
-                                        Here Are Our Honored Partners That
-                                        Have Been With us On This
+                                        Here Are Our Honored Partners That Have Been With Us On This Journey.
+
                                         </span>
                                       </h6>
                                     </div>
