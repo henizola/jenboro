@@ -1775,7 +1775,7 @@ if(!empty($_POST["send"])) {
                     </section>
                     <section
                       class="elementor-section elementor-top-section elementor-element elementor-element-6d19486 elementor-section-full_width qodef-elementor-content-grid elementor-section-height-default elementor-section-height-default"
-                      data-id="6d19486" data-element_type="section">
+                      data-id="6d19486" data-element_type="section" style='padding-bottom:100px'>
                       <div class="elementor-container elementor-column-gap-no">
                         <div class="elementor-row">
                           <div
@@ -1952,7 +1952,7 @@ if(!empty($_POST["send"])) {
                                           <div class="qodef-e-inner">
                                             <div class="qodef-e-image">
                                               <div class="qodef-e-media-image">
-                                                <a itemprop="url" href="apartment-item/south-complex/">
+                                                <a itemprop="url" href="apartment-item/apartment-block/">
                                                   <img width="800" height="610"
                                                     src="wp-content/uploads/2020/05/h1-apart-feature-5.jpg"
                                                     class="attachment-full size-full wp-post-image" alt="a"
@@ -1987,7 +1987,7 @@ if(!empty($_POST["send"])) {
                                           <div class="qodef-e-inner">
                                             <div class="qodef-e-image">
                                               <div class="qodef-e-media-image">
-                                                <a itemprop="url" href="apartment-item/modern-suite/">
+                                                <a itemprop="url" href="apartment-item/apartment-block/">
                                                   <img width="800" height="610"
                                                     src="wp-content/uploads/2020/05/h1-apart-feature-6.jpg"
                                                     class="attachment-full size-full wp-post-image" alt="a"
