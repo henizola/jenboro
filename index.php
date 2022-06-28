@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="profile" href="https://gmpg.org/xfn/11" />
-  <title>Jenbero</title>
+  <title>JENBORO</title>
   <meta name="robots" content="max-image-preview:large" />
 
   <script data-cfasync="false" data-pagespeed-no-defer>
@@ -1160,7 +1160,7 @@ if(!empty($_POST["send"])) {
                                   <div class="elementor-widget-container">
                                     <div class="qodef-shortcode qodef-m qodef-section-title qodef-alignment--left">
                                       <h3 class="qodef-m-title">
-                                        YOUR IDEAL HOME WITH 70% COMPLETE
+                                        YOUR IDEAL HOME, WITH 70% COMPLETE
                                       </h3>
                                       <p class="qodef-m-text" style="margin-top: 28px">
                                       We provide homes of attractive design for comfort made affordable.
@@ -1621,10 +1621,10 @@ if(!empty($_POST["send"])) {
                                                   </div>
                                                   <div class="qodef-m-content">
                                                     <h5 class="qodef-m-title" style="color: #ffffff">
-                                                      <span class="qodef-m-title-text">Build For Human</span>
+                                                      <span class="qodef-m-title-text">Built For Human</span>
                                                     </h5>
                                                     <p class="qodef-m-text" style="color: #b2b2b2">
-                                                     disillusioned by uncomfortable offer from elsewhere .
+                                                    For our design, we look to provide spaces accurately crafted for you - disillusioned by uncomfortable offers from elsewhere.
                                                     </p>
                                                   </div>
                                                 </div>

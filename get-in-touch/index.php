@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="profile" href="https://gmpg.org/xfn/11" />
-  <title>Contact Us &#8211; Hendon</title>
+  <title>Get-in-touch &#8211; JENBORO</title>
   <meta name="robots" content="max-image-preview:large" />
 
   <script data-cfasync="false" data-pagespeed-no-defer>
