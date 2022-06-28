@@ -607,7 +607,7 @@ if(!empty($_POST["send"])) {
               </li>
               <li id="menu-item-1984"
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-26 qodef-menu-item--narrow">
-                <a href="#"><span class="qodef-menu-item-text">Contact</span><span class="qodef-menu-arrow">
+                <a href="../contact-us"><span class="qodef-menu-item-text">Contact</span><span class="qodef-menu-arrow">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10"
                       xml:space="preserve">
