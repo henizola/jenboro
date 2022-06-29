@@ -1021,7 +1021,7 @@ if(!empty($_POST["send"])) {
                                         </div>
                                         <div class="qodef-m-title-holder">
                                           <h6 class="qodef-m-title">
-                                            Square Meter
+                                            Square Meters
                                           </h6>
                                         </div>
                                       </div>
@@ -1160,7 +1160,8 @@ if(!empty($_POST["send"])) {
                                   <div class="elementor-widget-container">
                                     <div class="qodef-shortcode qodef-m qodef-section-title qodef-alignment--left">
                                       <h3 class="qodef-m-title">
-                                        YOUR IDEAL HOME, WITH 70% COMPLETE
+                                        Your Ideal Home, Delivered 70% Complete 
+
                                       </h3>
                                       <p class="qodef-m-text" style="margin-top: 28px">
                                       We provide homes of attractive design for comfort made affordable.
