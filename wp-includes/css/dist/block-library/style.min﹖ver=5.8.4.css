@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @charset "UTF-8";
 #start-resizable-editor-section {
   display: none;
@@ -3241,3 +3245,5 @@ padding-bottom:50px;
   text-align: justify!important;
   margin-top:50px;
 }
+
+
