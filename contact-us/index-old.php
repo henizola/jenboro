@@ -538,7 +538,7 @@ if(!empty($_POST["send"])) {
               data-area="header-widget-two">
               <div class="textwidget custom-html-widget">
                 <a class="qodef-shortcode qodef-m qodef-button qodef-layout--outlined qodef-size--small qodef-html--link"
-                  href="../#blue-prints" target="_self" rel="noopener">
+                  href="../request-3d/" target="_self" rel="noopener">
                   <span class="qodef-m-text">Request a 3D Design</span>
                 </a>
               </div>

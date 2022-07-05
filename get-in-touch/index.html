@@ -538,7 +538,7 @@ if(!empty($_POST["send"])) {
               data-area="header-widget-two">
               <div class="textwidget custom-html-widget">
                 <a class="qodef-shortcode qodef-m qodef-button qodef-layout--outlined qodef-size--small qodef-html--link"
-                  href="../#blue-prints" target="_self" rel="noopener">
+                  href="../request-3d/" target="_self" rel="noopener">
                   <span class="qodef-m-text">Request a 3D Design</span>
                 </a>
               </div>
@@ -1100,7 +1100,7 @@ if(!empty($_POST["send"])) {
                       <a href="../faq/#1">Which pricing plan do I pick?</a>
                     </p>
                     <p>
-                      <a href="../faq/#2">How long does the process take?</a>
+                      <a href="../faq/#7">How long does the process take?</a>
                     </p>
                     <p>
                       <a href="../faq/#10">What are home warranty plans?</a>
@@ -1148,33 +1148,46 @@ if(!empty($_POST["send"])) {
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                       </div>
-                      <form name="contactFormEmail" method="post">
-                        <div class="input-row">
-                          <label>Full Name </label>
-                          <input type="text" name="userName" required id="userName">
+                      <form action="#wpcf7-f258-o2" method="post" class="wpcf7-form init" novalidate="novalidate"
+                        data-status="init">
+                        <div style="display: none">
+                          <input type="hidden" name="_wpcf7" value="258" />
+                          <input type="hidden" name="_wpcf7_version" value="5.5.3" />
+                          <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f258-o2" />
+                          <input type="hidden" name="_wpcf7_container_post" value="0" />
+                          <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
                         </div>
-                        <div class="input-row">
-                          <label>Email </label>
-                          <input type="email" name="userEmail" required id="userEmail">
-                        </div>
-                        <div class="input-row">
-                          <label>Subject</label>
-                          <input type="text" name="userPhone" required id="userPhone">
-                        </div>
-                        <div class="input-row">
-                          <label>Message</label>
-                          <textarea name="userMessage" required id="userMessage"></textarea>
-                        </div>
-                        <div class="input-row">
-                          <input type="submit" name="send" value="Submit">
-                          <?php if (! empty($message)) {?>
-                          <div class='success'>
-                            <strong>
-                              <?php echo $message; ?>
-                            </strong>
+                        <div class="qodef-newsletter-cf7">
+                          <div>
+                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value=""
+                                size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                aria-required="true" aria-invalid="false" placeholder="Name" /></span>
                           </div>
-                          <?php } ?>
+                          <div>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                value="" size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                aria-required="true" aria-invalid="false" placeholder="E-mail" /></span>
+                          </div>
+                          <div>
+                            <button id="submit" class="wpcf7-form-control wpcf7-submit">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" x="0px" y="0px" width="74px" height="40px" viewBox="0 0 74 40"
+                                enable-background="new 0 0 74 40" xml:space="preserve">
+                                <g>
+                                  <circle opacity="0.5" fill="none" stroke="#fcb040" cx="71%" cy="50%" r="24%" style="">
+                                  </circle>
+                                  <circle fill="none" stroke="#fcb040" cx="71%" cy="50%" r="24%"></circle>
+                                </g>
+                                <polygon fill="#fcb040"
+                                  points="49.525,14.265 48.898,15.044 54.481,19.541 6.444,19.541 6.444,20.541 54.464,20.541 48.901,24.954 49.522,25.737 56.7,20.044 ">
+                                </polygon>
+                              </svg>
+                            </button>
+                          </div>
                         </div>
+                        <div class="wpcf7-response-output" aria-hidden="true"></div>
                       </form>
                     </div>
                   </div>
