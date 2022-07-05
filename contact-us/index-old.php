@@ -1011,7 +1011,7 @@ if(!empty($_POST["send"])) {
                                   <div class="elementor-widget-container">
                                     <div class="qodef-shortcode qodef-m qodef-section-title qodef-alignment--center">
                                       <h2 class="qodef-m-title">
-                                        Request a visit
+                                        Book An Appointment
                                       </h2>
                                     </div>
                                   </div>
@@ -1326,10 +1326,10 @@ if(!empty($_POST["send"])) {
                         contact@jenbororealestate.com</a>
                       <br />
                       <span style="color: #fcb040"> </span>
-                      <a href=""> Addis Ababa,</a>
+                      <a href=""> Addis Ababa, Ethiopia</a>
                       <br />
                       <span style="color: #fcb040"> </span>
-                      <a href=""> Ethiopia</a>
+                      <a href=""></a>
                     </p>
                   </div>
                 </div>
