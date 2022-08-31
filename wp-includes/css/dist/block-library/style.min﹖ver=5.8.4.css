@@ -3229,6 +3229,10 @@ pre.wp-block-verse {
 padding:0px 20%;
 }
 
+@media screen and (max-width:600px){
+  .story-section{padding:0 5%;}
+}
+
 .story-title{
   text-align: center;
   margin:0!important;
