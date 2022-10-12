@@ -616,9 +616,7 @@ if(!empty($_POST["send"])) {
                       </g>
                     </svg> </span></a>
               </li>
-              <li id="menu-item-1570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1570">
-                <a href="../faq/"><span class="qodef-menu-item-text">FAQ</span></a>
-              </li>
+             
             </ul>
           </nav>
           <div class="qodef-widget-holder">
@@ -680,10 +678,7 @@ if(!empty($_POST["send"])) {
               <a href="../contact-us/"><span class="qodef-menu-item-text">Contact us</span>
               </a>
             </li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-727 qodef-menu-item--narrow">
-              <a href="../faq/"><span class="qodef-menu-item-text">Faq</span>
-              </a>
-            </li>
+            
           </ul>
         </nav>
       </div>
